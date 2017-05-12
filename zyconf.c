@@ -221,10 +221,10 @@ PHP_MSHUTDOWN_FUNCTION(zyconf)
 {
 	UNREGISTER_INI_ENTRIES();
 	if(zyconf_file_name){
-		php_printf("\nPHP_MSHUTDOWN_FUNCTION\n");
-		//php_zyconf_hash_destroy(zyconf_file_name);
+		//php_printf("\nPHP_MSHUTDOWN_FUNCTION\n");
+		php_zyconf_hash_destroy(zyconf_file_name);
 	} 
-	php_printf("\nPHP_MSHUTDOWN_FUNCTION222222\n");
+	//php_printf("\nPHP_MSHUTDOWN_FUNCTION222222\n");
 	return SUCCESS;
 }
 
